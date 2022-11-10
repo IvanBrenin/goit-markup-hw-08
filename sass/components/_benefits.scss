@@ -1,0 +1,20 @@
+
+.list-item {
+    .benefits-list > &::before {
+        content: "";
+        display: block;
+        height: 120px;
+        background-color: $filter-background-color;
+        margin-bottom: 30px;
+        border-radius: 4px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    @each $icon in $icons {
+        $i: index($icons, $icon);
+        .benefits-list > &:nth-child(#{$i}):before {
+            background-image: url("../img/#{$icon}.svg");
+          }
+    }
+}

@@ -1,0 +1,39 @@
+.social__list {
+    @extend %flex;
+}
+
+.site-footer__social {
+    margin-left: 70px;
+}
+
+.social__title {
+  color: $primary-white-color;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.social__link {
+    @extend %social-link;
+    background-color: rgba(255, 255, 255, 0.1);
+    &:hover, &:focus {background-color: $accent-color;}
+  }
+
+.social__icon {
+    @extend %social-icon;
+    fill: $primary-white-color;
+}
+
+
+.social__item {
+    margin-left: 10px;
+    &:first-of-type {
+        margin-left: 0px;
+    }
+}
+  

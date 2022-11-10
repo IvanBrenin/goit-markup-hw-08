@@ -1,0 +1,63 @@
+.footer-signup {
+    margin-left: auto;
+}
+
+.footer-signup__form {
+    @extend %flex
+}
+
+.footer-signup__title {
+    color: $primary-white-color;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-signup__input {
+    background-color: inherit;
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4px;
+    letter-spacing: 0.03em;
+    color: $footer-address-color;
+    &:focus {  
+        outline: none;
+        border: 1px solid $accent-color;
+    }
+}
+
+
+.footer-signup__button {
+    @extend %flex;
+    width: 200px;
+    margin-left: 12px;
+    border: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: inherit;
+    font-style: normal;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.85;
+    letter-spacing: 0.06em;
+    background-color: $accent-color;
+    color: $primary-white-color;
+    fill: $primary-white-color;
+    align-items: center;
+}
+
+.footer-signup__icon {
+    margin-left: 10px;
+}
